@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --img-stars: url(./assets/img8.png)
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  text-align: center;
+  background: #F9F4FB;
+  padding-bottom: 9.3rem;
+
+}
+
+header h1 {
+  font-size: 3.2rem;
+  color: #B52184;
+  font-weight: 900;
+}
+
+header p {
+  font-size: 2.0rem;
+  font-weight: 600;
+  color: #312D64;
+  margin-bottom: 3.5rem;
+}
+
+main {
+  background: #312D64;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.4rem 3.9rem;
+  gap: 5.0rem;
+  width: 100%;
+
+}
+
+main #box {
+background: white;
+  display: flex;
+  padding: 2.6rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.3rem;
+  align-self: stretch;
+  border-radius: 2.0rem;
+  justify-content: center;
+}
+
+main #box .texts h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #B52184;
+
+}
+
+main #box .texts p {
+  font-size: 1.6rem;
+  color: #312D64;
+  font-weight: 600;
+  padding-right: 4.3rem;
+
+}
+
+main #box .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+
+aside {
+  color: #F9F4FB;
+}
+
+aside form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 7.8rem 4.1rem 6.5rem;
+  gap: 2.4rem;
+}
+
+aside form legend {
+  color: #B52184; 
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+aside form .input-wrapper input {
+  display: flex;
+  width: 100%;
+  padding: 1.2rem 1.6rem 1.2rem 4rem;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 1.6rem;
+  color: #312D64;
+  font-size: 1.6rem;
+}
+
+aside form .input-wrapper label {
+  color: #312D64;
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+form textarea {
+  display: flex;
+  width: 100%;
+  padding: 1.2rem 1.6rem 1.6rem 1.6rem;
+  align-items: flex-start;
+  gap: 1.0rem;
+  font-size: 1.6rem;
+  color: #312D64;
+  border-radius: 1.6rem;
+  border: 0.15rem solid #312D64;
+}
+
+form button {
+  background: linear-gradient(96deg, hsl(242, 50%, 38%) 0%, #302C63 99.68%);
+  display: flex;
+  height: 4.5rem;
+  width: 15.1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.0rem;
+  border-radius: 1.6rem;
+  border: 0;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+form .input-wrapper label {
+  margin: 1.2rem;
+  position: absolute;
+}
+
+footer {
+  height: 7.8rem;
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+
+}
+
+footer p {
+  color: #FFF;
+  text-align: center;
+  font-size: 2.0rem;
+  font-weight: 600;
+}
+
+
+
+@media(min-width: 700px) {
+
+  header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+
+  header .hub {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  header h1 {
+    font-size: 5.9rem
+  }
+  
+  header p {
+    margin-bottom: 17.9rem;
+    font-size: 3.2rem;
+  }
+
+
+
+  header .imgheader img {
+    width: 72rem;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+    padding: 6.4rem 11.1rem;
+
+  }
+
+  main #box .texts h2{
+    font-size: 3.5rem;
+  }
+  main #box .texts p{
+    font-size: 1.9rem;
+  }
+  aside {
+    display: flex;
+    padding-right: 0;
+    padding-bottom: 0;
+    justify-content: flex-end;
+    gap: 9.2rem;
+  }
+
+  aside .img {
+    content: var(--img-stars);
+    height: 100%;
+  }
+
+  aside form {
+    display: flex;
+    justify-content: center;
+    width: 59.2rem;
+  }
+  aside form .textbox textarea {
+    height: 9.8rem;
+
+  }
+}
