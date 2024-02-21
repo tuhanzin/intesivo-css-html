@@ -1,4 +1,4 @@
-* {
+er* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -174,7 +174,7 @@ footer p {
   header{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   header .hub {
